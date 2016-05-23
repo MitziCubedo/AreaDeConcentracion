@@ -1,0 +1,418 @@
+﻿.titulo{
+    background: #397FB2;
+    color: #ffffff;
+    width: 450px;
+    text-align: center;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+
+
+
+/*Campos obligatorios*/
+.camposObligatorios{
+    border: 2px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align:left;
+    width:360px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.camposObligatorios{
+    color: #000000;
+    background-image: url('../imagenes/alerta.png');
+    border-color: #ffffff;
+}
+
+
+/*Estilo a radios*/
+.formulario .radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+.formulario .radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #397FB2; 
+}
+
+.formulario input[type="radio"] {
+    display: none; 
+}
+
+.formulario input[type="radio"]:checked + label:before {
+      display: none; 
+}
+
+.formulario input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: #397FB2;
+      border-radius: 2px;
+      color: #fff; 
+}
+
+
+
+/*Imagen de fondo*/
+/*body{
+	background-image: url(fondo.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;	
+}
+
+fieldset{
+	opacity: 0.9;
+}*/
+
+
+/*Hace que al dar clic aparezca el borde de este color*/
+.formulario input:focus, .formulario textarea:focus{
+	border-color: #397FB2;
+}
+
+/*Formato para las ayudas*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+   /* border-bottom: 2px dotted black; /* If you want dots under the hoverable text */
+    color: #397FB2;
+    background-image: url('../imagenes/ayuda.png');
+    background-repeat: no-repeat;   
+    width: 80px;
+    text-align: right; 
+    height: 30px;
+    background-position:left;   
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #397FB2;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px; 
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.formulario{
+    padding-top: 10px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+    padding-left: 140px;
+}
+
+
+.form_hint{
+	background: #397FB2;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	display: none;
+	margin-left: 8px;
+	padding: 1px 6px;
+	position: absolute;
+	z-index: 999;
+}
+
+input[type="text"]:disabled {
+    background: #E1E6EB;
+}
+
+.form_hint::before{
+	color: #397FB2;
+	content: "\25C0";
+	left: -6px;
+	position: absolute;
+	top: 1px;
+}
+
+.form_hint, .required_notification{
+	font-size: 11px;
+}
+
+body{
+	font: 13px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	word-spacing: 4px;	
+}
+
+.formulario label{
+	/*font-family: Georgia, Times, "Times New Roman", serif;*/
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+fieldset {
+	/*border:6px groove #AAC0F4; /* Borde */
+	/*background:#FFFFFF; /* Color de fondo */
+	color:#000; /* Color del texto de todo el contenido */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Verdana, Geneva, sans-serif;	
+	border-color: #AAC0F4;
+}
+
+legend {
+	text-align:left; /* Puedes cambiarlo por center o right */
+	font-weight:bold; /* Estilo de la fuente del título */
+	color:#BE680C; /* Color del título */
+	font-size:14pt;	
+	padding: 10px;	
+}
+
+*:focus{
+	outline: none;
+
+}
+
+.required_notification{
+	color: #d45252;
+	display: inline;
+	float: right;
+	margin: 5px 0 0 0;
+}
+
+.formulario input, .formulario textarea{
+	padding-left: 7px;
+  	padding-right: 7px;
+  	padding-top: 6px;
+  	padding-bottom: 6px; 
+	border: 2px solid #aaa;
+	border-radius: 2px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	moz-transition: padding .25s;
+	o-transition: padding .25s;
+	transition: padding .25s;
+	webkit-transition: padding .25s;	
+}
+
+/*Hace que los componentes se alarguen al dar clic*/
+/*.formulario input:focus, .formulario textarea:focus{
+	background: #fff;
+	border: 1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	padding-right: 70px;
+}
+*/
+
+
+
+.formulario input:focus + .form_hint{
+	display: inline;
+}
+
+.formulario input:required:valid + .form_hint{
+	background: #28921f;
+}
+
+.formulario input:required:valid + .form_hint::before{
+	color: #397FB2;
+}
+
+
+
+
+
+/*
+button.submit{
+	background: linear-gradient(top, #68b12f, #50911e);
+	background: -moz-linear-gradient(top, #68b12f, #50911e);
+	background: -ms-linear-gradient(top, #68b12f, #50911e);
+	background: -o-linear-gradient(top, #68b12f, #50911e);
+	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+	background: -webkit-linear-gradient(top, #68b12f, #50911e);
+	background-color: #68b12f;
+	border: 3px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	color: black;
+	font-weight: bold;
+	moz-border-radius: 3px;
+	moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	ms-border-radius: 3px;
+	ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	o-border-radius: 3px;
+	o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+	webkit-border-radius: 3px;
+	webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+	width: 12em;  height: 3em;	
+	font-size: 18px;
+}
+
+button.submit:hover{
+	cursor: pointer;
+	opacity: .85;
+}
+
+button.submit:active{
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+	moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	o-box-shadow: 0 0 10px 5px #356b0b inset;
+	webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+*/
+
+button {
+ border: none;
+ background: #3a7999;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+
+button:hover:before {
+ width: 100%;
+}
+
+button:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+
+
+
+/*
+
+
+select{
+	background: #eee url(arrow.png);
+	background-position: 280px center;
+    background-repeat: no-repeat;
+   	padding: 10px;
+   	font-size: 14px;
+   	border: 0;
+   	border-radius: 3px;
+   -webkit-appearance: none;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+select:hover{
+	background-color: #ddd;
+}
+
+*/
+
+
+
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#000000;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+select {
+	position:relative
+}
+
+select:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+select:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+
+
+
+.info, .correcto, .ojo, .error, .validation {
+    border: 2px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align:left;
+    width:auto;
+    border-radius: 10px;
+}
+
+.info {
+    color: #0657AD;
+    background-color: #B5DDF0;
+    background-image: url('../imagenes/alerta.png');
+    border-color: #ffffff;
+}
