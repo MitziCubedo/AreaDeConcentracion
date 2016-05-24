@@ -5,7 +5,10 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
- 
+center{
+    margin-top: 10px; 
+} 
+
 body {background:#FEFEFE;}
 .Banner {
 margin: 0px;

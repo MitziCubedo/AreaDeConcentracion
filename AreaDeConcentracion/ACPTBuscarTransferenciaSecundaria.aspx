@@ -12,6 +12,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+       
      <center>
             <legend align ="center" class="titulo">BÚSQUEDA DE TRANSFERENCIA SECUNDARIA</legend>
               <div class="camposObligatorios"><b>Los campos marcados con * son obligatorios.</b></div>
