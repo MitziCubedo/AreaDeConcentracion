@@ -11,6 +11,7 @@ namespace AreaDeConcentracion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            MenuUP menu = new MenuUP(nav);
 
         }
     }

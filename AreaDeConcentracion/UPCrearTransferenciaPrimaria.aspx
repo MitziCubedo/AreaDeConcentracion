@@ -6,6 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Crear Transferencia Primaria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../imagenes/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/estilo.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
 </head>
@@ -14,9 +16,6 @@
     <div>
         
          <header>
-              <div class = "Banner">
-              <img src="imagenes/logo.png" alt="Banner Sistema de Gestión Documental"> 
-              </div>
           <nav>
                <asp:Panel ID="nav" runat="server"></asp:Panel>
                
@@ -123,18 +122,25 @@
                   <asp:DropDownList ID="DDNombreTraslada" runat="server">
                     <asp:ListItem>-selecciona-</asp:ListItem>
                 </asp:DropDownList> 
-             <span class="tooltiptext">Nombre de la persona que dejará la transferencia en Archivo Histórico..</span>
-             <br/><br/>
+               <div class="tooltip"> Ayuda.
+                <span class="tooltiptext">Nombre de la persona que dejará la transferencia en Archivo Histórico.</span>
+            </div> 
               <label>* Nombre de la persona que captura:</label>
                 <asp:TextBox ID="TBNombreCaptura" disabled="" runat="server"></asp:TextBox><br/><br/>
             
-         </fieldset>
-          <br/>         
+         </fieldset>       
             <center>
             <button class="submit" type="submit" id="btnRegistrar">Solicitar</button>
             <button class="submit" type="submit" id="btnRegistrar">Imprimir</button><br/>
             </center>
-
+    </div>
+         <div class="container body-content"> 
+         <br />
+         <br />
+         <hr />
+         <footer>
+             <p>&copy; <%: DateTime.Now.Year %> - Archivohistorico</p>
+         </footer>
     </div>
     </form>
 </body>

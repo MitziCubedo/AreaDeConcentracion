@@ -66,8 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagenes\favicon.ico" />
+    <Content Include="imagenes\logo.png" />
     <Content Include="packages.config" />
     <Content Include="Index.Master" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -86,8 +89,16 @@
     <Content Include="css\estilos.css" />
     <Content Include="imagenes\alerta.png" />
     <Content Include="imagenes\ayuda.png" />
-    <Content Include="imagenes\logo.png" />
     <Content Include="index.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="UPBuscarAuxiliar.aspx" />
     <Content Include="UPBuscarConsulta.aspx" />
     <Content Include="UPBuscarTransferenciaPrimaria.aspx" />

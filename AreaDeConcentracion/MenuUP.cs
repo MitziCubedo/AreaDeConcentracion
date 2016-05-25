@@ -18,7 +18,13 @@ namespace AreaDeConcentracion
             Literal nav = new Literal();
 
 
-            nav.Text ="<nav>"
+            nav.Text =
+                "<header>"
+              +"<div class='Banner'>"
+              +"<img src='imagenes/logo.png' alt='Banner Sistema de Gestión Documental'>" 
+              +"</div>"
+              +"</header>"
+               + "<nav>"
           + " <ul>"
 
              + "<li class='submenu'>"
@@ -26,24 +32,24 @@ namespace AreaDeConcentracion
             + " <ul class='children'>"
               + "<li><a href='UPCrearTransferenciaPrimaria.aspx'> Crear </a></li>"
               + "<li><a href='#'>En Proceso</a></li>"
-              + "<li><a href='UPBuscarTransferenciPrimaria.aspx'> Buscar </a></li>"
+              + "<li><a href='UPBuscarTransferenciaPrimaria.aspx'> Buscar </a></li>"
                + "</ul>"
              + "</li>"
 
             + "<li class='submenu'>"
             + "<a href = '#'><i class='fa fa-list-ul' aria-hidden='true'></i>   Consulta</a>"
             + "<ul class='children'>"
-              + "<li><a href='ConsultaCrear.html'> Crear</a></li>"
+              + "<li><a href='UPCrearConsulta.aspx'> Crear</a></li>"
               + "<li><a href='#'>En Proceso</a></li>"
-              + "<li><a href='ConsultaBuscar.html'> Buscar</a></li>"
+              + "<li><a href='UPBuscarConsulta.aspx'> Buscar</a></li>"
               + "</ul>"
              + "</li>"
 
              + "<li class = 'submenu'>"
             + "<a href='#'><i class='fa fa-list-ol' aria-hidden='true'></i>   Auxiliar</a>"
             + "<ul class='children'>"
-              + "<li><a href='UsuarioRepUnidadProductoraNuevo.html'> Crear</a></li>"
-             + " <li><a href='UsuarioRepUnidadProductoraBuscar.html'>Buscar / Editar</a></li>"
+              + "<li><a href='UPCrearAuxiliar.aspx'> Crear</a></li>"
+             + " <li><a href='UPBuscarAuxiliar.aspx'>Buscar / Editar</a></li>"
             + "</ul>"
           + "</li>"
 

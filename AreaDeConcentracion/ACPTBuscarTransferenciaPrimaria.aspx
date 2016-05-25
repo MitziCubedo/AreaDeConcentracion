@@ -56,6 +56,14 @@
             <button class="submit" type="submit" id="btnRegistrar">Buscar</button></br></br>
          </center>
     </div>
+          <div class="container body-content"> 
+         <br />
+         <br />
+         <hr />
+         <footer>
+             <p>&copy; <%: DateTime.Now.Year %> - Archivohistorico</p>
+         </footer>
+    </div>
     </form>
 </body>
 </html>

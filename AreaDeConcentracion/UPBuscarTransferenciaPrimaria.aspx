@@ -6,12 +6,19 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Buscar Transferencia Primaria</title>
-     <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/estilo.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+        <header>
+            <nav>
+                <asp:Panel ID="nav" runat="server"></asp:Panel>
+            </nav>
+        </header>
      <center>
             <legend align ="center" class="titulo">BÚSQUEDA DE TRANSFERENCIA PRIMARIA</legend>
               <div class="camposObligatorios"><b>Los campos marcados con * son obligatorios.</b></div>
@@ -42,6 +49,14 @@
          <center>
             <button class="submit" type="submit" id="btnRegistrar">Buscar</button></br></br>
          </center>
+    </div>
+          <div class="container body-content"> 
+         <br />
+         <br />
+         <hr />
+         <footer>
+             <p>&copy; <%: DateTime.Now.Year %> - Archivohistorico</p>
+         </footer>
     </div>
     </form>
 </body>
