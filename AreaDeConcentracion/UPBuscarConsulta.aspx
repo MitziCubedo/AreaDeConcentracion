@@ -14,7 +14,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <header>
+          <header>
+                     
+            <div class='Banner'>
+            <img src="imagenes/logo.png" alt="Banner Sistema de Gestión Documental">
+            </div>
+
             <nav>
                 <asp:Panel ID="nav" runat="server"></asp:Panel>
             </nav>

@@ -66,11 +66,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AC.aspx" />
+    <Content Include="PTBuscarTransferenciaSecundaria.aspx" />
+    <Content Include="PTBuscarTransferenciaPrimaria.aspx" />
+    <Content Include="PTBuscarSerializacion.aspx" />
+    <Content Include="PTBuscarPrevaloracion.aspx" />
+    <Content Include="PTBuscarDeposito.aspx" />
+    <Content Include="PTBuscarConsulta.aspx" />
+    <Content Include="ACPTBuscarSerializacion.aspx" />
+    <Content Include="ACPTBuscarPrevaloracion.aspx" />
     <Content Include="imagenes\favicon.ico" />
     <Content Include="imagenes\logo.png" />
     <Content Include="packages.config" />
     <Content Include="Index.Master" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -90,15 +98,8 @@
     <Content Include="imagenes\alerta.png" />
     <Content Include="imagenes\ayuda.png" />
     <Content Include="index.aspx" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <None Include="Scripts\_references.js" />
+    <Content Include="PT.aspx" />
+    <Content Include="UP.aspx" />
     <Content Include="UPBuscarAuxiliar.aspx" />
     <Content Include="UPBuscarConsulta.aspx" />
     <Content Include="UPBuscarTransferenciaPrimaria.aspx" />
@@ -108,6 +109,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AC.aspx.cs">
+      <DependentUpon>AC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AC.aspx.designer.cs">
+      <DependentUpon>AC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ACBuscarUsuario.aspx.cs">
       <DependentUpon>ACBuscarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -122,6 +130,48 @@
     <Compile Include="ACCrearUsuario.aspx.designer.cs">
       <DependentUpon>ACCrearUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PTBuscarTransferenciaSecundaria.aspx.cs">
+      <DependentUpon>PTBuscarTransferenciaSecundaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarTransferenciaSecundaria.aspx.designer.cs">
+      <DependentUpon>PTBuscarTransferenciaSecundaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTBuscarTransferenciaPrimaria.aspx.cs">
+      <DependentUpon>PTBuscarTransferenciaPrimaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarTransferenciaPrimaria.aspx.designer.cs">
+      <DependentUpon>PTBuscarTransferenciaPrimaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTBuscarSerializacion.aspx.cs">
+      <DependentUpon>PTBuscarSerializacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarSerializacion.aspx.designer.cs">
+      <DependentUpon>PTBuscarSerializacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTBuscarPrevaloracion.aspx.cs">
+      <DependentUpon>PTBuscarPrevaloracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarPrevaloracion.aspx.designer.cs">
+      <DependentUpon>PTBuscarPrevaloracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTBuscarDeposito.aspx.cs">
+      <DependentUpon>PTBuscarDeposito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarDeposito.aspx.designer.cs">
+      <DependentUpon>PTBuscarDeposito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTBuscarConsulta.aspx.cs">
+      <DependentUpon>PTBuscarConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PTBuscarConsulta.aspx.designer.cs">
+      <DependentUpon>PTBuscarConsulta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ACPTBuscarConsulta.aspx.cs">
       <DependentUpon>ACPTBuscarConsulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +185,20 @@
     </Compile>
     <Compile Include="ACPTBuscarDeposito.aspx.designer.cs">
       <DependentUpon>ACPTBuscarDeposito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ACPTBuscarSerializacion.aspx.cs">
+      <DependentUpon>ACPTBuscarSerializacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACPTBuscarSerializacion.aspx.designer.cs">
+      <DependentUpon>ACPTBuscarSerializacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ACPTBuscarPrevaloracion.aspx.cs">
+      <DependentUpon>ACPTBuscarPrevaloracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACPTBuscarPrevaloracion.aspx.designer.cs">
+      <DependentUpon>ACPTBuscarPrevaloracion.aspx</DependentUpon>
     </Compile>
     <Compile Include="ACPTBuscarTransferenciaPrimaria.aspx.cs">
       <DependentUpon>ACPTBuscarTransferenciaPrimaria.aspx</DependentUpon>
@@ -164,8 +228,25 @@
     <Compile Include="Index.Master.designer.cs">
       <DependentUpon>Index.Master</DependentUpon>
     </Compile>
+    <Compile Include="MenuAC.cs" />
+    <Compile Include="MenuPT.cs" />
+    <Compile Include="Menus.cs" />
     <Compile Include="MenuUP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PT.aspx.cs">
+      <DependentUpon>PT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PT.aspx.designer.cs">
+      <DependentUpon>PT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UP.aspx.cs">
+      <DependentUpon>UP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UP.aspx.designer.cs">
+      <DependentUpon>UP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UPBuscarAuxiliar.aspx.cs">
       <DependentUpon>UPBuscarAuxiliar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

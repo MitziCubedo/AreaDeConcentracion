@@ -15,12 +15,16 @@
     <form id="form1" runat="server">
     <div>
         
-         <header>
-          <nav>
-               <asp:Panel ID="nav" runat="server"></asp:Panel>
-               
-          </nav>
-     </header>
+           <header>
+                     
+            <div class='Banner'>
+            <img src="imagenes/logo.png" alt="Banner Sistema de Gestión Documental">
+            </div>
+
+            <nav>
+                <asp:Panel ID="nav" runat="server"></asp:Panel>
+            </nav>
+        </header>
         <center>
             <legend align="center" class="titulo">INVENTARIO DE TRANSFERENCIA PRIMARIA</legend>
              <div class="camposObligatorios"><b>Los campos marcados con * son obligatorios.</b></div>

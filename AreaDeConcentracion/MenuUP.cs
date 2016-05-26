@@ -15,16 +15,11 @@ namespace AreaDeConcentracion
 
         public Literal navbar()
         {
-            Literal nav = new Literal();
-
+            Literal nav = new Literal();        
 
             nav.Text =
-                "<header>"
-              +"<div class='Banner'>"
-              +"<img src='imagenes/logo.png' alt='Banner Sistema de Gestión Documental'>" 
-              +"</div>"
-              +"</header>"
-               + "<nav>"
+              
+              "<nav>"
           + " <ul>"
 
              + "<li class='submenu'>"
@@ -53,7 +48,7 @@ namespace AreaDeConcentracion
             + "</ul>"
           + "</li>"
 
-       + " </ul>"
+       + "</ul>"
       + "</nav>";
             return nav;
         }

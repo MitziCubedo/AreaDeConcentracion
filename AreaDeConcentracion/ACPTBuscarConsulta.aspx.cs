@@ -11,7 +11,7 @@ namespace AreaDeConcentracion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            MenuAC menuAC = new MenuAC(nav);
         }
     }
 }

@@ -6,12 +6,24 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Crear Auxiliar</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../imagenes/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/estilo.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+             <header>
+                     
+            <div class='Banner'>
+            <img src="imagenes/logo.png" alt="Banner Sistema de Gestión Documental">
+            </div>
+
+            <nav>
+                <asp:Panel ID="nav" runat="server"></asp:Panel>
+            </nav>
+        </header>
             <center>
             <legend align="center" class="titulo">CREAR USUARIO</legend>
              <div class="camposObligatorios"><b>Los campos marcados con * son obligatorios.</b></div>
@@ -20,7 +32,9 @@
                 <legend>Usuario</legend>
                  <label>* Tipo de Usuario:</label>
                  <asp:DropDownList ID="DDTipoUsuario" runat="server">
-                    <asp:ListItem>-selecciona-</asp:ListItem>
+                    <asp:ListItem>Área de Concentración</asp:ListItem>
+                       <asp:ListItem>Procesos Técnicos</asp:ListItem>
+                       <asp:ListItem>Unidad Productora</asp:ListItem>
                 </asp:DropDownList>
             </fieldset>
             <fieldset>
